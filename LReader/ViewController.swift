@@ -13,6 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        print(ReaderController.shared.books ?? "no books")
+
+        let books = ReaderController.shared.books
+        if let books = books {
+            let pathModel = books[0]
+            ReaderController.shared.parserBook(pathModel)
+        }
+
+
+        
     }
 
 

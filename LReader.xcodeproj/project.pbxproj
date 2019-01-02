@@ -14,6 +14,13 @@
 		AB71F44721CCFDBD00E26E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB71F44521CCFDBD00E26E38 /* LaunchScreen.storyboard */; };
 		AB71F45221CCFDBD00E26E38 /* LReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F45121CCFDBD00E26E38 /* LReaderTests.swift */; };
 		AB71F45D21CCFDBD00E26E38 /* LReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F45C21CCFDBD00E26E38 /* LReaderUITests.swift */; };
+		AB71F46F21CCFEA500E26E38 /* ReaderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F46E21CCFEA500E26E38 /* ReaderBook.swift */; };
+		AB71F47121CCFED000E26E38 /* ReaderParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F47021CCFED000E26E38 /* ReaderParser.swift */; };
+		AB7A7BB121DC587000980D72 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7A7BB021DC587000980D72 /* BookModel.swift */; };
+		AB7A7BB321DC595600980D72 /* ReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7A7BB221DC595600980D72 /* ReaderController.swift */; };
+		AB7A7BB521DC684A00980D72 /* ReaderPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7A7BB421DC684A00980D72 /* ReaderPath.swift */; };
+		AB7A7BB721DC8E9500980D72 /* BookPathModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7A7BB621DC8E9500980D72 /* BookPathModel.swift */; };
+		AB7A7BB921DCA20E00980D72 /* ChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7A7BB821DCA20E00980D72 /* ChapterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		AB71F45821CCFDBD00E26E38 /* LReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB71F45C21CCFDBD00E26E38 /* LReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LReaderUITests.swift; sourceTree = "<group>"; };
 		AB71F45E21CCFDBD00E26E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB71F46E21CCFEA500E26E38 /* ReaderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderBook.swift; sourceTree = "<group>"; };
+		AB71F47021CCFED000E26E38 /* ReaderParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderParser.swift; sourceTree = "<group>"; };
+		AB7A7BB021DC587000980D72 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		AB7A7BB221DC595600980D72 /* ReaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderController.swift; sourceTree = "<group>"; };
+		AB7A7BB421DC684A00980D72 /* ReaderPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderPath.swift; sourceTree = "<group>"; };
+		AB7A7BB621DC8E9500980D72 /* BookPathModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPathModel.swift; sourceTree = "<group>"; };
+		AB7A7BB821DCA20E00980D72 /* ChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB4E24B321CE83C3004CE2D5 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				AB4E24B421CE83CE004CE2D5 /* Hpple */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		AB4E24B421CE83CE004CE2D5 /* Hpple */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Hpple;
+			sourceTree = "<group>";
+		};
 		AB71F43021CCFDBB00E26E38 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +126,10 @@
 		AB71F43B21CCFDBB00E26E38 /* LReader */ = {
 			isa = PBXGroup;
 			children = (
+				AB4E24B321CE83C3004CE2D5 /* OC */,
+				AB71F46A21CCFDE400E26E38 /* Core */,
+				AB71F46D21CCFE5100E26E38 /* ViewController */,
+				AB71F46C21CCFE1000E26E38 /* Model */,
 				AB71F43C21CCFDBB00E26E38 /* AppDelegate.swift */,
 				AB71F43E21CCFDBB00E26E38 /* ViewController.swift */,
 				AB71F44021CCFDBB00E26E38 /* Main.storyboard */,
@@ -123,6 +156,50 @@
 				AB71F45E21CCFDBD00E26E38 /* Info.plist */,
 			);
 			path = LReaderUITests;
+			sourceTree = "<group>";
+		};
+		AB71F46A21CCFDE400E26E38 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB7A7BB221DC595600980D72 /* ReaderController.swift */,
+				AB71F46E21CCFEA500E26E38 /* ReaderBook.swift */,
+				AB71F47021CCFED000E26E38 /* ReaderParser.swift */,
+				AB7A7BB421DC684A00980D72 /* ReaderPath.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AB71F46B21CCFE0900E26E38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB71F46C21CCFE1000E26E38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB7A7BAF21DC582D00980D72 /* BookModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB71F46D21CCFE5100E26E38 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AB71F46B21CCFE0900E26E38 /* View */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AB7A7BAF21DC582D00980D72 /* BookModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB7A7BB021DC587000980D72 /* BookModel.swift */,
+				AB7A7BB621DC8E9500980D72 /* BookPathModel.swift */,
+				AB7A7BB821DCA20E00980D72 /* ChapterModel.swift */,
+			);
+			path = BookModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7A7BB121DC587000980D72 /* BookModel.swift in Sources */,
 				AB71F43F21CCFDBB00E26E38 /* ViewController.swift in Sources */,
+				AB7A7BB321DC595600980D72 /* ReaderController.swift in Sources */,
+				AB71F46F21CCFEA500E26E38 /* ReaderBook.swift in Sources */,
+				AB7A7BB521DC684A00980D72 /* ReaderPath.swift in Sources */,
 				AB71F43D21CCFDBB00E26E38 /* AppDelegate.swift in Sources */,
+				AB71F47121CCFED000E26E38 /* ReaderParser.swift in Sources */,
+				AB7A7BB921DCA20E00980D72 /* ChapterModel.swift in Sources */,
+				AB7A7BB721DC8E9500980D72 /* BookPathModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +516,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MZ4SGLQM8M;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +525,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,8 +535,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MZ4SGLQM8M;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +544,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
