@@ -1,0 +1,6 @@
+framework module Pods_LReader {
+  umbrella header "Pods-LReader-umbrella.h"
+
+  export *
+  module * { export * }
+}

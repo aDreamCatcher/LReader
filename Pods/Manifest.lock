@@ -1,0 +1,16 @@
+PODS:
+  - LayoutKit (10.0.1)
+
+DEPENDENCIES:
+  - LayoutKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LayoutKit
+
+SPEC CHECKSUMS:
+  LayoutKit: 4e69fb0f1cc3e9c2a764b58f99e88004f5da861c
+
+PODFILE CHECKSUM: f4d89eae5406042a509936ffd3c86e72fa817b83
+
+COCOAPODS: 1.5.0

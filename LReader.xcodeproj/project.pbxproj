@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69A5EEFBDC20DFB1B770047C /* Pods_LReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058797F83B3A256D0695A310 /* Pods_LReaderTests.framework */; };
+		6FDBE52666AEC8B5637E6A6F /* Pods_LReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EFBE111D3E25C040C6D6F9 /* Pods_LReaderUITests.framework */; };
+		A3C335D565E52FE81BE27C31 /* Pods_LReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D82DD209624329FE99FCA8 /* Pods_LReader.framework */; };
 		AB0C543C21DDAB4800377700 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C543B21DDAB4800377700 /* MainViewController.swift */; };
 		AB0C543E21DDB8D600377700 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C543D21DDB8D600377700 /* MainCollectionViewCell.swift */; };
 		AB0C544021DDFA5600377700 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C543F21DDFA5600377700 /* ReaderViewController.swift */; };
@@ -44,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		058797F83B3A256D0695A310 /* Pods_LReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		088DF968803F88F4DD83FD7B /* Pods-LReaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LReaderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LReaderUITests/Pods-LReaderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F5A00BC7D379C20B56DEC42 /* Pods-LReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-LReader/Pods-LReader.release.xcconfig"; sourceTree = "<group>"; };
+		63B79DD9B25BFBD452681D2C /* Pods-LReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LReaderTests/Pods-LReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83EFBE111D3E25C040C6D6F9 /* Pods_LReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCF4544A6634478708CA0CF /* Pods-LReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LReaderTests/Pods-LReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		A599C19E67C0313E3835C68B /* Pods-LReaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LReaderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LReaderUITests/Pods-LReaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB0C543B21DDAB4800377700 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB0C543D21DDB8D600377700 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB0C543F21DDFA5600377700 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +77,8 @@
 		AB7A7BB421DC684A00980D72 /* ReaderPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderPath.swift; sourceTree = "<group>"; };
 		AB7A7BB621DC8E9500980D72 /* BookPathModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPathModel.swift; sourceTree = "<group>"; };
 		AB7A7BB821DCA20E00980D72 /* ChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterModel.swift; sourceTree = "<group>"; };
+		D4D82DD209624329FE99FCA8 /* Pods_LReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAECAD3940B35692BE5A107 /* Pods-LReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LReader/Pods-LReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C335D565E52FE81BE27C31 /* Pods_LReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A5EEFBDC20DFB1B770047C /* Pods_LReaderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDBE52666AEC8B5637E6A6F /* Pods_LReaderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DF2275F203056F4C287B512 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4D82DD209624329FE99FCA8 /* Pods_LReader.framework */,
+				058797F83B3A256D0695A310 /* Pods_LReaderTests.framework */,
+				83EFBE111D3E25C040C6D6F9 /* Pods_LReaderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB4E24B321CE83C3004CE2D5 /* OC */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +141,8 @@
 				AB71F45021CCFDBD00E26E38 /* LReaderTests */,
 				AB71F45B21CCFDBD00E26E38 /* LReaderUITests */,
 				AB71F43A21CCFDBB00E26E38 /* Products */,
+				BED50D7AB8C5E02BE7F0A98E /* Pods */,
+				9DF2275F203056F4C287B512 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +238,19 @@
 			path = BookModel;
 			sourceTree = "<group>";
 		};
+		BED50D7AB8C5E02BE7F0A98E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBAECAD3940B35692BE5A107 /* Pods-LReader.debug.xcconfig */,
+				4F5A00BC7D379C20B56DEC42 /* Pods-LReader.release.xcconfig */,
+				63B79DD9B25BFBD452681D2C /* Pods-LReaderTests.debug.xcconfig */,
+				9CCF4544A6634478708CA0CF /* Pods-LReaderTests.release.xcconfig */,
+				A599C19E67C0313E3835C68B /* Pods-LReaderUITests.debug.xcconfig */,
+				088DF968803F88F4DD83FD7B /* Pods-LReaderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB71F46121CCFDBD00E26E38 /* Build configuration list for PBXNativeTarget "LReader" */;
 			buildPhases = (
+				5ACCB94AF18842ED8451E934 /* [CP] Check Pods Manifest.lock */,
 				AB71F43521CCFDBB00E26E38 /* Sources */,
 				AB71F43621CCFDBB00E26E38 /* Frameworks */,
 				AB71F43721CCFDBB00E26E38 /* Resources */,
+				0CFB9737CE248594C93EFF1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB71F46421CCFDBD00E26E38 /* Build configuration list for PBXNativeTarget "LReaderTests" */;
 			buildPhases = (
+				7936733865C5B1E4CDBC0A39 /* [CP] Check Pods Manifest.lock */,
 				AB71F44921CCFDBD00E26E38 /* Sources */,
 				AB71F44A21CCFDBD00E26E38 /* Frameworks */,
 				AB71F44B21CCFDBD00E26E38 /* Resources */,
@@ -253,6 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB71F46721CCFDBD00E26E38 /* Build configuration list for PBXNativeTarget "LReaderUITests" */;
 			buildPhases = (
+				2D7EDEDA9BA5C00008D45DF7 /* [CP] Check Pods Manifest.lock */,
 				AB71F45421CCFDBD00E26E38 /* Sources */,
 				AB71F45521CCFDBD00E26E38 /* Frameworks */,
 				AB71F45621CCFDBD00E26E38 /* Resources */,
@@ -336,6 +380,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CFB9737CE248594C93EFF1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LReader/Pods-LReader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LReader/Pods-LReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D7EDEDA9BA5C00008D45DF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LReaderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ACCB94AF18842ED8451E934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7936733865C5B1E4CDBC0A39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LReaderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB71F43521CCFDBB00E26E38 /* Sources */ = {
@@ -526,15 +645,13 @@
 		};
 		AB71F46221CCFDBD00E26E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBAECAD3940B35692BE5A107 /* Pods-LReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LReader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -545,15 +662,13 @@
 		};
 		AB71F46321CCFDBD00E26E38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5A00BC7D379C20B56DEC42 /* Pods-LReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LReader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -564,17 +679,14 @@
 		};
 		AB71F46521CCFDBD00E26E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B79DD9B25BFBD452681D2C /* Pods-LReaderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ4SGLQM8M;
 				INFOPLIST_FILE = LReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -585,17 +697,14 @@
 		};
 		AB71F46621CCFDBD00E26E38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CCF4544A6634478708CA0CF /* Pods-LReaderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ4SGLQM8M;
 				INFOPLIST_FILE = LReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -606,16 +715,13 @@
 		};
 		AB71F46821CCFDBD00E26E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A599C19E67C0313E3835C68B /* Pods-LReaderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ4SGLQM8M;
 				INFOPLIST_FILE = LReaderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -626,16 +732,13 @@
 		};
 		AB71F46921CCFDBD00E26E38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088DF968803F88F4DD83FD7B /* Pods-LReaderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ4SGLQM8M;
 				INFOPLIST_FILE = LReaderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xin.LReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
