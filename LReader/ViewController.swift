@@ -10,22 +10,45 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - instance properties
+
+    let mainTabBarController = UITabBarController()
+
+    let mainViewController = MainViewController()
+
+    let searchViewController = UIViewController()
+
+    // MARK: - instance initialization
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    // MARK: - life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        print(ReaderController.shared.books ?? "no books")
-
-        let books = ReaderController.shared.books
-        if let books = books {
-            let pathModel = books[0]
-            ReaderController.shared.parserBook(pathModel)
-        }
-
-
-        
+        setupUI()
     }
 
+    // MARK: - setup ui
+
+    private func setupUI() {
+        mainViewController.title = "SHELF"
+        searchViewController.title = "SEARCH"
+
+        let mainNavigationController = UINavigationController(rootViewController: mainViewController)
+        let searchNavigationController = UINavigationController(rootViewController: searchViewController)
+
+        mainTabBarController.setViewControllers([mainNavigationController, searchNavigationController],
+                                                animated: true)
+
+        addChild(mainTabBarController)
+        view.addSubview(mainTabBarController.view)
+        mainTabBarController.didMove(toParent: self)
+    }
 
 }
 

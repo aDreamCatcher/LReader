@@ -43,8 +43,6 @@ class ReaderParser {
 
             var lastRange = NSRange.init(location: 0, length: 0)
             for (index, value) in checkingResults.enumerated() {
-                print("index \(index)")
-
                 // chapter title
                 let titleRange = lastRange
 
