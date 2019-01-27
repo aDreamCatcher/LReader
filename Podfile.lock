@@ -1,16 +1,16 @@
 PODS:
-  - LayoutKit (10.0.1)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
-  - LayoutKit
+  - SnapKit (~> 4.2.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - LayoutKit
+    - SnapKit
 
 SPEC CHECKSUMS:
-  LayoutKit: 4e69fb0f1cc3e9c2a764b58f99e88004f5da861c
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: f4d89eae5406042a509936ffd3c86e72fa817b83
+PODFILE CHECKSUM: 3da418267a75df04830e70419fa47b37bc78e44c
 
 COCOAPODS: 1.5.0

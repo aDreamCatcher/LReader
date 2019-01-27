@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LayoutKit
 
 class ReaderViewController: UIViewController {
     // MARK: - instance properties
@@ -17,6 +18,11 @@ class ReaderViewController: UIViewController {
 
     private var topToolBar = UIToolbar(frame: .zero)
     private var bottomToolBar = UIToolbar(frame: .zero)
+
+    private let topBarHeight = {
+        // TODO: return different value by device
+        return CGFloat(64.0)
+    }()
 
     // MARK: - initialization
 
@@ -52,6 +58,9 @@ class ReaderViewController: UIViewController {
 
     func setupUI() {
         // topToolBar items
+
+        setupTopToolBar()
+        setupBottomToolBar()
     }
 
 }
@@ -59,23 +68,45 @@ class ReaderViewController: UIViewController {
 // topToolBar & bottomToolBar logic
 extension ReaderViewController {
 
+    // MARK: - top/bottom bar ui
     func setupTopToolBar() {
         let backItem = UIBarButtonItem(image: UIImage(named: "toolBar_back"),
                                        style: UIBarButtonItem.Style.plain,
                                        target: self,
-                                       action: #selector(back))
+                                       action: #selector(backAction))
 
-        let catalogItem = UIBarButtonItem(title: "Catalog",
-                                          style: UIBarButtonItem.Style.plain,
+        topToolBar.setItems([backItem], animated: false)
+
+        view.addSubview(topToolBar)
+
+        topToolBar.addConstraints([
+            NSLayoutConstraint(item: topToolBar,
+                               attribute: .bottom,
+                               relatedBy: .equal,
+                               toItem: view,
+                               attribute: .top,
+                               multiplier: 1.0,
+                               constant: 0.0)
+            ])
+    }
+
+    func setupBottomToolBar() {
+        // TODO: items[catalogItem, FontItem, dayNightItem ...]
+        let catalogItem = UIBarButtonItem(title: "catalog",
+                                          style: .plain,
                                           target: self,
-                                          action: #selector(showCatalog))
+                                          action: #selector(catalogAction))
 
-        topToolBar.setItems([backItem, catalogItem], animated: false)
+        bottomToolBar.setItems([catalogItem], animated: false)
     }
 
-    @objc func back() {
+
+    // MARK: - actions
+
+    @objc private func backAction() {
     }
 
-    @objc func showCatalog() {
+    @objc private func catalogAction() {
     }
+
 }

@@ -13,6 +13,8 @@
 		AB0C543C21DDAB4800377700 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C543B21DDAB4800377700 /* MainViewController.swift */; };
 		AB0C543E21DDB8D600377700 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C543D21DDB8D600377700 /* MainCollectionViewCell.swift */; };
 		AB0C544021DDFA5600377700 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C543F21DDFA5600377700 /* ReaderViewController.swift */; };
+		AB37211E21E443B900302612 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37211D21E443B900302612 /* CatalogViewController.swift */; };
+		AB37212021E4450400302612 /* CatalogItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37211F21E4450400302612 /* CatalogItemLayout.swift */; };
 		AB71F43D21CCFDBB00E26E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F43C21CCFDBB00E26E38 /* AppDelegate.swift */; };
 		AB71F43F21CCFDBB00E26E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F43E21CCFDBB00E26E38 /* ViewController.swift */; };
 		AB71F44221CCFDBB00E26E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB71F44021CCFDBB00E26E38 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		AB0C543B21DDAB4800377700 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB0C543D21DDB8D600377700 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB0C543F21DDFA5600377700 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
+		AB37211D21E443B900302612 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		AB37211F21E4450400302612 /* CatalogItemLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItemLayout.swift; sourceTree = "<group>"; };
 		AB71F43921CCFDBB00E26E38 /* LReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB71F43C21CCFDBB00E26E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB71F43E21CCFDBB00E26E38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,14 @@
 				83EFBE111D3E25C040C6D6F9 /* Pods_LReaderUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB37212121E4451300302612 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				AB37211F21E4450400302612 /* CatalogItemLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		AB4E24B321CE83C3004CE2D5 /* OC */ = {
@@ -221,9 +233,11 @@
 		AB71F46D21CCFE5100E26E38 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AB37212121E4451300302612 /* Layouts */,
 				AB71F46B21CCFE0900E26E38 /* View */,
 				AB0C543B21DDAB4800377700 /* MainViewController.swift */,
 				AB0C543F21DDFA5600377700 /* ReaderViewController.swift */,
+				AB37211D21E443B900302612 /* CatalogViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -389,11 +403,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LReader/Pods-LReader-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -463,6 +477,8 @@
 			files = (
 				AB7A7BB121DC587000980D72 /* BookModel.swift in Sources */,
 				AB71F43F21CCFDBB00E26E38 /* ViewController.swift in Sources */,
+				AB37212021E4450400302612 /* CatalogItemLayout.swift in Sources */,
+				AB37211E21E443B900302612 /* CatalogViewController.swift in Sources */,
 				AB7A7BB321DC595600980D72 /* ReaderController.swift in Sources */,
 				AB71F46F21CCFEA500E26E38 /* ReaderBook.swift in Sources */,
 				AB7A7BB521DC684A00980D72 /* ReaderPath.swift in Sources */,

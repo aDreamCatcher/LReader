@@ -6,7 +6,7 @@ target 'LReader' do
   use_frameworks!
 
   # Pods for LReader
-  pod 'LayoutKit'
+    pod 'SnapKit', '~> 4.2.0'
 
   target 'LReaderTests' do
     inherit! :search_paths

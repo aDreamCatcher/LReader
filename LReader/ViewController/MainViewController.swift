@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
     // MARK: - Constants
 
-    let mainCollectionViewCellIdentifier = "mainCollectionViewCellIdentifier"
+    let reuseIdentifier = "mainCollectionViewCellIdentifier"
 
     // MARK: - instance properties
 
@@ -53,7 +53,7 @@ class MainViewController: UIViewController {
     private func setupUI() {
 
         mainCollectionView.register(MainCollectionViewCell.self,
-                                forCellWithReuseIdentifier: mainCollectionViewCellIdentifier)
+                                forCellWithReuseIdentifier: reuseIdentifier)
         mainCollectionView.dataSource = self
         mainCollectionView.delegate = self
         view.addSubview(mainCollectionView)
@@ -126,7 +126,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mainCollectionViewCellIdentifier, for: indexPath) as! MainCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MainCollectionViewCell
 
         if let bookPathModel = books?[indexPath.row] {
             assign(value: bookPathModel, to: cell)
